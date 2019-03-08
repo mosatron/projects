@@ -3,7 +3,9 @@
 ## Salt ToDo
 
 This is the classic Todo app exercise. Your task is to create a simple todo app - no backend required.
+
 Exactly how you implement and design this is up to you - but your solution should be implemented in the files `index.html`, `js/todo.js` and `style/todo.css`. You may use the screenshot at the bottom of this page for inspiration.
+You are **not** allowed to follow a tutorial!
 
 ### Requirements
 1. Initially, the list of todo cards should be empty.
