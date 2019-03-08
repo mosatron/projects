@@ -27,3 +27,6 @@ You are free to add other functionality (as long as the requirements above are s
 | ![Todo](todo.png) |
 |:---:|
 | Example of a todo app |
+
+## When you are done
+Put all the files you've worked with in a folder named after yourself, zip the folder and then send it to Lars on Slack!
