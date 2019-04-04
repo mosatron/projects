@@ -1,0 +1,17 @@
+
+
+.item-remove:hover {
+  border-style: solid;
+  border-color: black;
+}
+
+#input-button:hover {
+  background: linear-gradient(to bottom, #a9db80 0%,#96c56f 100%);
+  
+  color: white;
+}
+
+.item:hover {
+  box-shadow: 2px 2px 5px rgba(6, 5, 5, 0.18);
+}
+

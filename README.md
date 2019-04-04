@@ -1,32 +1,34 @@
-# &lt;/salt&gt;
+A simple TODO app using vanillaJS
 
-## Salt ToDo
+Known problems: 
 
-This is the classic Todo app exercise. Your task is to create a simple todo app - no backend required.
+* Bug on todo.js: 76 :
+  - Should check condition before attempting to removeChild();
+  - the problem appears when moveToDone() is called on line 14.
 
-Exactly how you implement and design this is up to you - but your solution should be implemented in the files `index.html`, `js/todo.js` and `style/todo.css`. You may use the screenshot at the bottom of this page for inspiration.
+* Add Button theme.css :
+  - Button should be scaled on wider views
+  - Button should have only two different styles: round or square
+  - look over layout & grid settings for input field.
+  - Possibly animated
 
-You are **not** allowed to follow a tutorial!
+* Change settings for removeButton todo.js : 64
+  - instead of adding/removing, button can be hidden
 
-### Requirements
-1. Initially, the list of todo cards should be empty.
-2. There should be a form where the user can add a new 'todo'.
-3. When a new todo task is submitted from the form, a new todo card should be appended to the list.
-4. Clicking on a todo card should visually mark the card as done. Exactly how is up to you.
+* localStorage todo.js :
+  - should be possible to save content
 
-### Additional functionality (optional) 
-The list below contains additional functionality that is optional to implement. Treat them as suggestions. 
-You are free to add other functionality (as long as the requirements above are still fulfilled) to your app if you come up with something better.
+  -> check if there is any data in localStorage('toDo': {title, desc})
+  -> check if there is any data in localStorage('done': {title, desc})
 
-5. Add a remove button to cards marked as 'done'. When the button is clicked, the card should be removed from the board.
-6. Store the current state in the browser's local storage. When the browser is shut down and then opened again, the state should be restored.
-7. Move the cards marked as 'done' to the bottom of the list.
-8. Add date and a timestamp to the cards. Sort the cards based on the timestamp. (Cards marked as done should still be in the bottom of the list)
-9. Let the user decide whether to sort the cards in ascending or descending order.
+  -> parse the data from localStorage in objects inside 2 arrays
+  -> iterate through the arrays and pass key ('title', 'desc') to makeItem and moveItem
 
-| ![Todo](todo.png) |
-|:---:|
-| Example of a todo app |
+  -> set data to localStorage with the eventlistener
+  -> remove data from localStorage with removeItem
 
-## When you are done
-Put all the files you've worked with in a folder named after yourself, zip the folder and then send it to Lars on Slack!
+* Cursor is sometimes changing??
+
+
+
+

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>&lt;/salt&gt; :: ToDo</title>
+  <link rel="stylesheet" type="text/css" href="style/index.css">
+</head>
+<body>
+  
+  <form id="form">
+    <input class="input" id="subj" type="text" placeholder="  Subject"><br>
+    <input class ="input" id="desc" type="text" placeholder="  Description"><br>
+    <input type="submit"  id="input-button" class="input-button" value="+">
+    <small id="invalidInput" style="display:none;">Please input subject and description.</small>
+  </form>
+  
+  <div class="list" id="list-full">
+    <div id="toDoList" class="list-block">
+    </div>
+    <div id="doneList" class="list-block">
+    </div>  
+  </div>
+    
+  <script src="todo.js"></script>
+  </body>
+  </html>
+  
